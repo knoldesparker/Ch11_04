@@ -10,13 +10,14 @@ public class Main {
         List<Integer> ogList = new LinkedList<>(Arrays.asList(elements));
         System.out.println(ogList);
 
-        partition(ogList,5);
+        partition(ogList,1);
 
 
     }
     public static void partition(List<Integer> list, int split){
         List<Integer> tempList1 = new LinkedList<>();
         List<Integer> tempList2 = new LinkedList<>();
+        List<Integer> temp3 = new LinkedList<>();
         Iterator<Integer> itr = list.iterator();
 
         while (itr.hasNext()){
@@ -28,9 +29,9 @@ public class Main {
                 tempList2.add(less);
             }
         }
-
-
-        System.out.println(tempList1 + "" +tempList2);
+        temp3.addAll(tempList1);
+        temp3.addAll(tempList2);
+        System.out.println(temp3);
 
 
 
