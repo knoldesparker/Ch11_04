@@ -10,7 +10,7 @@ public class Main {
         List<Integer> ogList = new LinkedList<>(Arrays.asList(elements));
         System.out.println(ogList);
 
-        partition(ogList,1);
+        partition(ogList,5);
 
 
     }
